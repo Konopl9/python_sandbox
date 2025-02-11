@@ -1,0 +1,40 @@
+import re
+
+text = '''12 drummers drumming,
+11 pipers piping,
+10 lords a-leaping,
+9 ladies dancing,
+8 maids a-milking,
+7 swans a-swimming,
+6 geese a-laying,
+5 golden rings,
+4 calling birds,
+3 French hens,
+2 turtle doves,
+And a partridge in a pear tree! 🎶🎄'''
+
+regex = re.compile(r'\d+\s\w+')
+data = regex.findall(text)
+print(data)
+
+# replace a|b|c with [abc]
+text_v1 = "I've been going through a lot of staff latetly."
+regexVowels = re.compile(r'[aeiouAEIOU]')
+regexConsonant = re.compile(r'[^aeiouAEIOU]')
+regexConsonantTwoInARow = re.compile(r'[^aeiouAEIOU]{2}')
+vowels = regexVowels.findall(text_v1)
+consonants = regexConsonant.findall(text_v1)
+consonantsTwoInARow = regexConsonantTwoInARow.findall(text_v1)
+print(vowels, consonants, consonantsTwoInARow)
+
+# find at the start / end 
+# start ^Hello
+# end world$
+text = 'Hello world'
+regexStart = re.compile(r'^Hello')
+start = regexStart.findall(text)
+print(start)
+# end
+regexStart = re.compile(r'world$')
+end = regexStart.findall(text)
+print(end)
