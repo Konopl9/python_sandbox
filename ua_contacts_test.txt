@@ -1,0 +1,8 @@
+Hello, my name is John Doe. You can contact me at +38-063-111-11-11 or email me at john.doe@example.com.
+My colleague's number is +38-(097)-222-22-22, and his email is colleague_97@company.ua.
+Some people write their numbers like 063-111-11-11 or (050)-333-33-33.
+Another common format is +380631111111 or 380971112233.
+Invalid numbers: 123-456-7890, +1-555-666-7777.
+Random text here, just to add noise.
+Another contact: olga_petrenko1987@gmail.com or +38-050-987-65-43.
+Meeting scheduled for 12th March, call me at (063)-555-44-33 if needed.
