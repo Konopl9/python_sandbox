@@ -1,0 +1,6 @@
+2025-02-17 19:34:23,992 - DEBUG - Start program: 
+2025-02-17 19:34:23,993 - DEBUG - Current 1: factorial is 1
+2025-02-17 19:34:23,993 - DEBUG - Current 2: factorial is 2
+2025-02-17 19:34:23,993 - DEBUG - Current 3: factorial is 6
+2025-02-17 19:34:23,993 - DEBUG - Current 4: factorial is 24
+2025-02-17 19:34:23,993 - DEBUG - Current 5: factorial is 120
