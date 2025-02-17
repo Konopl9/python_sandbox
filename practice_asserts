@@ -1,0 +1,29 @@
+import traceback
+
+def printBox(width, height, symbol):
+    if(len(symbol) != 1):
+        raise Exception('Symbol length should be 1!')
+    if(width < 2 or height < 2):
+        raise Exception("Height and width should be bigger than 2")
+    print(symbol * width)
+    for i in range(height - 2):
+        print(symbol + (' '* (width-2)) + symbol)
+    print(symbol * width)
+
+def program():
+    while(True):
+        printBox(5, 5, '#')
+        height = input('Height:')
+        width = input('Width:')
+        try:
+            printBox(int(height), int(width), '#')
+        except:
+            errorFile = open('error_file.txt', 'a')
+            errorFile.write(traceback.format_exc())
+            errorFile.close()
+            print("Added traceback to a file")
+        quit = input("Press q to end:")
+        if(quit == 'q'):
+            break
+
+program()

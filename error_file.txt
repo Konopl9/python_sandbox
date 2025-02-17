@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/maksymmishchenko/Study/python_sandbox/practice_asserts", line 19, in program
+    printBox(height, width, '#')
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksymmishchenko/Study/python_sandbox/practice_asserts", line 6, in printBox
+    if(width < 2 or height < 2):
+       ^^^^^^^^^
+TypeError: '<' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/Users/maksymmishchenko/Study/python_sandbox/practice_asserts", line 19, in program
+    printBox(height, width, '#')
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksymmishchenko/Study/python_sandbox/practice_asserts", line 8, in printBox
+    print(symbol * width)
+          ~~~~~~~^~~~~~~
+TypeError: can't multiply sequence by non-int of type 'str'
+Traceback (most recent call last):
+  File "/Users/maksymmishchenko/Study/python_sandbox/practice_asserts", line 19, in program
+    printBox(int(height), int(width), '#')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksymmishchenko/Study/python_sandbox/practice_asserts", line 8, in printBox
+    print(symbol * width)
+          ~~~~~~~^~~~~~~
+TypeError: can't multiply sequence by non-int of type 'str'
